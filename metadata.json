@@ -1,0 +1,6 @@
+{
+  "name": "BareBones",
+  "description": "Survive the month on ₹10,000 — interactive Gen Z personal finance dashboard with real-time financial health, risk gauges, decision simulator, and Discord reminders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

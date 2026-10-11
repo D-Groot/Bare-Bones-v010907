@@ -1,0 +1,74 @@
+{
+  "entities": {
+    "userBudget": {
+      "title": "UserBudget",
+      "description": "User monthly budget, financial records, goals, and settings",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth user ID"
+        },
+        "startingBudget": {
+          "type": "number",
+          "description": "Base starting budget"
+        },
+        "additionalIncome": {
+          "type": "number",
+          "description": "Additional income earned"
+        },
+        "currentDay": {
+          "type": "number",
+          "description": "Current active day of 30-day month"
+        },
+        "expenses": {
+          "type": "array",
+          "description": "List of logged expenses"
+        },
+        "subscriptions": {
+          "type": "array",
+          "description": "List of recurring subscriptions"
+        },
+        "fixedCommitments": {
+          "type": "array",
+          "description": "List of fixed monthly bills"
+        },
+        "savingsGoals": {
+          "type": "array",
+          "description": "Savings goals with progress"
+        },
+        "templates": {
+          "type": "array",
+          "description": "One-click expense templates"
+        },
+        "history": {
+          "type": "array",
+          "description": "Past closed month records"
+        },
+        "discordWebhookUrl": {
+          "type": "string",
+          "description": "Discord notification webhook URL"
+        },
+        "discordAutoPing": {
+          "type": "boolean",
+          "description": "Whether daily automated pings are enabled"
+        },
+        "theme": {
+          "type": "string",
+          "description": "UI theme (dark or light)"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last modification"
+        }
+      },
+      "required": ["userId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/budget/state": {
+      "schema": "userBudget",
+      "description": "User private budget state document"
+    }
+  }
+}

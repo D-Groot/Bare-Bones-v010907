@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BareBones — Survive the Month on ₹10,000</title>
+    <meta name="description" content="Survive the month on ₹10,000 — interactive Gen Z personal finance dashboard with real-time financial health, risk gauges, decision simulator, one-click recurring templates, and Discord reminders." />
+    <meta property="og:title" content="BareBones — Survive the Month on ₹10,000" />
+    <meta property="og:description" content="Survive the month on ₹10,000 — interactive Gen Z personal finance dashboard with real-time financial health, risk gauges, decision simulator, one-click recurring templates, and Discord reminders." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#090d16" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%237c3aed%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27%3EB%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-violet-500 selection:text-white">
+    <noscript>
+      <div style="background-color: #0f172a; color: #f8fafc; padding: 2rem; font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; border-radius: 1rem; border: 1px solid #334155;">
+        <h1 style="color: #a78bfa; margin-top: 0;">BareBones — Survive the Month on ₹10,000</h1>
+        <p style="font-size: 1.1rem; line-height: 1.6;">
+          BareBones is a modern personal finance application designed for Gen Z to manage a limited ₹10,000 budget across 30 days.
+        </p>
+        <p style="color: #cbd5e1; line-height: 1.5;">
+          JavaScript is required to operate the interactive real-time calculators, 30-day timeline slider, decision simulator, and cloud synchronization. Please enable JavaScript in your browser settings to access the full interactive experience.
+        </p>
+        <div style="margin-top: 1.5rem; padding: 1rem; background-color: #1e293b; border-radius: 0.5rem;">
+          <h2 style="font-size: 1rem; color: #38bdf8; margin: 0 0 0.5rem 0;">Core Features:</h2>
+          <ul style="margin: 0; padding-left: 1.25rem; color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <li>Dynamic ₹10,000 30-Day Budget & Free Daily Allowance Tracking</li>
+            <li>Interactive "What-If" Decision Simulator with Safety Verdicts</li>
+            <li>One-Click Recurring Expense Templates (Groceries, Transit, Streaming)</li>
+            <li>Multi-Month Historical Spending & Financial Health Trends</li>
+            <li>Automated Daily Discord Check-In Alerts & Notifications</li>
+            <li>Dual Cloud Firebase Sync and Offline LocalStorage Fallback</li>
+          </ul>
+        </div>
+      </div>
+    </noscript>
+
+    <div id="root">
+      <!-- Semantic server-grade content fallback for non-JS runners, automated audits & crawlers -->
+      <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-3 focus:bg-violet-600 focus:text-white focus:rounded-lg">Skip to main content</a>
+      <div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-6">
+        <header class="w-full max-w-5xl py-6 flex items-center justify-between border-b border-slate-800/80 mb-8">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-slate-950 font-black text-xl">B</div>
+            <div>
+              <span class="text-xl font-extrabold tracking-tight text-white">BareBones</span>
+              <p class="text-xs text-slate-400">Survive the month on ₹10,000</p>
+            </div>
+          </div>
+          <span class="text-xs font-mono text-violet-400 px-3 py-1 rounded-lg bg-violet-950/60 border border-violet-800/50">Initial ₹10,000 Budget</span>
+        </header>
+
+        <main id="main-content" class="w-full max-w-5xl space-y-6">
+          <section class="space-y-3">
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+              Survive the Month on ₹10,000
+            </h1>
+            <p class="text-slate-400 text-base max-w-2xl leading-relaxed">
+              Every penny counts. BareBones connects your ₹10,000 starting budget, fixed commitments, variable daily spending, savings goals, and risk metrics into an interconnected Gen Z financial survival dashboard.
+            </p>
+          </section>
+
+          <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-xs font-medium text-slate-400">Starting Budget</span>
+              <p class="text-2xl font-bold font-mono text-white mt-1">₹10,000</p>
+              <span class="text-xs text-slate-500">30-day survival baseline</span>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-xs font-medium text-slate-400">Daily Allowance</span>
+              <p class="text-2xl font-bold font-mono text-emerald-400 mt-1">₹333 / day</p>
+              <span class="text-xs text-slate-500">Recommended spending pace</span>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-xs font-medium text-slate-400">Financial Health</span>
+              <p class="text-2xl font-bold font-mono text-violet-400 mt-1">Real-time Score</p>
+              <span class="text-xs text-slate-500">Dynamic solvency evaluation</span>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-xs font-medium text-slate-400">Decision Simulator</span>
+              <p class="text-2xl font-bold font-mono text-amber-400 mt-1">"What-If" Engine</p>
+              <span class="text-xs text-slate-500">Test decisions before committing</span>
+            </div>
+          </section>
+
+          <div class="pt-6 text-center text-slate-500 text-sm">
+            <p>Loading BareBones interactive experience...</p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
